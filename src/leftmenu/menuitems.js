@@ -4,27 +4,32 @@ export const menuitems = {
     items: [
       {
         name: 'Cheese',
-        price: '$1.27',
-        description: '',
-      },
-      {
-        name: 'Enchilda Style',
-        price: '$1.49',
+        price: '$1.50',
         description: '',
       },
       {
         name: 'Guacamole',
-        price: '$1.59',
+        price: '$1.80',
         description: '',
       },
       {
         name: 'Sour Cream',
-        price: '$1.27',
+        price: '$1.50',
         description: '',
       },
       {
         name: 'Pico de Gallo',
-        price: '$1.27',
+        price: '$1.50',
+        description: '',
+      },
+      {
+        name: 'Enchilda Style',
+        price: '$1.54',
+        description: '',
+      },
+      {
+        name: 'Jalapeños',
+        price: '$1.50',
         description: '',
       },
     ],
@@ -34,12 +39,12 @@ export const menuitems = {
     items: [
       {
         name: 'Taco Salad',
-        price: '$7.37',
+        price: '$7.63',
         description: '',
       },
       {
         name: "Fili's Chicken Salad",
-        price: '$6.73',
+        price: '$6.97',
         description: '',
       },
     ],
@@ -49,62 +54,57 @@ export const menuitems = {
     items: [
       {
         name: 'Chicken',
-        price: '$2.58',
+        price: '$2.67',
         description: '',
       },
       {
         name: 'Beef',
-        price: '$2.90',
+        price: '$3.03',
         description: '',
       },
       {
         name: 'Pollo Asado',
-        price: '$3.04',
+        price: '$3.15',
         description: '',
       },
       {
         name: 'Carne Asada',
-        price: '$3.54',
+        price: '$3.66',
         description: '',
       },
       {
         name: 'Carnitas',
-        price: '$3.04',
+        price: '$3.15',
         description: '',
       },
       {
         name: 'Pescado',
-        price: '$3.04',
+        price: '$3.15',
         description: '',
       },
       {
         name: 'Camaron',
-        price: '$3.52',
+        price: '$3.64',
         description: '',
       },
       {
         name: 'Adobada',
-        price: '$3.04',
+        price: '$3.15',
         description: '',
       },
       {
         name: '3 Rolled Tacos Cheese',
-        price: '$3.41',
+        price: '$3.52',
         description: '',
       },
       {
         name: '3 Rolled Tacos Cheese w/ Guacamole',
-        price: '$4.06',
+        price: '$4.20',
         description: '',
       },
       {
         name: '5 Rolled Tacos Cheese w/ Guacamole',
-        price: '$5.23',
-        description: '',
-      },
-      {
-        name: '5 Rolled Tacos w/ Carne Asada',
-        price: '$8.92',
+        price: '$5.41',
         description: '',
       },
     ],
@@ -114,42 +114,47 @@ export const menuitems = {
     items: [
       {
         name: 'Cheese Quesadilla',
-        price: '$4.64',
+        price: '$4.80',
         description: '',
       },
       {
         name: 'Pint of Rice',
-        price: '$3.09',
+        price: '$3.20',
         description: '',
       },
       {
         name: 'Pint of Beans',
-        price: '$3.09',
+        price: '$3.20',
         description: '',
       },
       {
         name: 'Pint of Guacamole',
-        price: '$8.80',
+        price: '$9.11',
         description: '',
       },
       {
         name: 'Chips & Salsa',
-        price: '$3.47',
+        price: '$3.59',
+        description: '',
+      },
+      {
+        name: 'Churros',
+        price: '$1.60',
         description: '',
       },
       {
         name: 'Carne Asada Fries',
-        price: '$8.92',
+        price: '$9.23',
         description: '',
       },
       {
         name: 'Cowboy Fries',
-        price: '$8.92',
+        price: '$9.23',
         description: '',
       },
       {
         name: 'Super Nachos',
-        price: '$10.26',
+        price: '$10.62',
         description: 'Steak, beans, cheese, sour cream, guacamole & pico de gallo',
       },
       {
@@ -178,11 +183,6 @@ export const menuitems = {
         price: '$2.59',
         description: '',
       },
-      {
-        name: 'Flan',
-        price: '$3.49',
-        description: '',
-      },
     ],
   },
   quesadillasSupreme: {
@@ -190,27 +190,22 @@ export const menuitems = {
     items: [
       {
         name: 'Carne Asada',
-        price: '$9.83',
+        price: '$10.17',
         description: '',
       },
       {
         name: 'Carnitas',
-        price: '$9.19',
+        price: '$9.51',
         description: '',
       },
       {
         name: 'Pollo',
-        price: '$8.76',
+        price: '$9.07',
         description: '',
       },
       {
         name: 'Camaron',
-        price: '$9.83',
-        description: '',
-      },
-      {
-        name: 'Mar y Tierra',
-        price: '$10.99',
+        price: '$10.17',
         description: '',
       },
     ],
@@ -239,21 +234,11 @@ export const menuitems = {
         price: '$2.34',
         description: '',
       },
-      {
-        name: 'Orange Juice',
-        price: '$2.29',
-        description: '',
-      },
-      {
-        name: 'Coffee',
-        price: '$1.69',
-        description: '',
-      },
     ],
   },
   softDrinks: {
     name: 'Soft Drinks',
-    description: 'Coke, Diet Coke, Mr. Pibb, Fanta Orange, Sprite, Lemonade, Green Tea, Black Tea, Raspberry',
+    description: 'Coke, Diet Coke, Mr. Pibb, Fanta Orange, Sprite, Lemonade, Powerade, Hi-C Punch, Green Tea, Black Tea, Raspberry',
     items: [
       {
         name: 'Medium',

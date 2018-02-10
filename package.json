@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Joseph Gilgen <gilgenlabs@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "dev-build": "webpack"
+  },
   "devDependencies": {
     "aphrodite": "^1.2.0",
     "babel-core": "^6.24.1",
@@ -12,6 +16,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "html-webpack-plugin": "^2.30.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.3.3",

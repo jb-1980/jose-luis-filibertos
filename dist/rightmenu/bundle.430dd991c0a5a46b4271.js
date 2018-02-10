@@ -10220,7 +10220,7 @@ var Promo1 = function Promo1() {
           { className: 'promo1-text' },
           image.name
         ),
-        _react2.default.createElement('img', { src: '/assets/images/breakfastplatters/' + image.img,
+        _react2.default.createElement('img', { src: '../../assets/images/breakfastplatters/' + image.img,
           style: {
             width: '100%',
             height: 300,
@@ -10255,29 +10255,17 @@ var windowWidth = window.innerWidth;
 var columnWidth = (windowWidth - 4) / 4;
 
 var promos = [{
-  name: 'Chorizo Torta',
-  img: 'Chorizo_Torta.jpg'
+  name: 'Cheese Enchiladas',
+  img: 'Two_Cheese_Enchiladas.jpg'
 }, {
-  name: 'Ham Torta',
-  img: 'Ham_Torta.jpg'
+  name: 'Chicken Enchiladas',
+  img: 'Two_Chicken_Enchiladas.jpg'
 }, {
-  name: 'Machaca Torta',
-  img: 'Machaca_Torta.jpg'
+  name: 'Beef Enchiladas',
+  img: 'Two_Beef_Enchiladas.jpg'
 }, {
-  name: 'Carne Asada Torta',
-  img: 'Carne_Asada_Torta.jpg'
-}, {
-  name: 'Fish Torta',
-  img: 'Fish_Torta.jpg'
-}, {
-  name: 'Adobada Torta',
-  img: 'Adobada_Torta.jpg'
-}, {
-  name: 'Chicken Torta',
-  img: 'Chicken_Torta.jpg'
-}, {
-  name: 'Carnitas Torta',
-  img: 'Carnitas_Torta.jpg'
+  name: 'Two Chile Rellenos',
+  img: 'Two_Chile_Rellenos.jpg'
 }];
 
 var Promo2 = function Promo2() {
@@ -10294,7 +10282,7 @@ var Promo2 = function Promo2() {
             borderRadius: 10
           } },
         _react2.default.createElement('img', { className: 'promo2-image',
-          src: '/assets/images/2017/tortas/' + promo.img,
+          src: '../../assets/images/2017/enchiladas/' + promo.img,
           style: {
             borderRadius: 10,
             height: 330,
@@ -10364,7 +10352,7 @@ var Promo3 = function Promo3() {
             overflow: 'hidden'
           } },
         _react2.default.createElement('img', { className: 'promo3-image',
-          src: '/assets/images/2017/tostadas/' + promo.img,
+          src: '../../assets/images/2017/tostadas/' + promo.img,
           style: {
             borderRadius: 10,
             height: 400,
@@ -10470,271 +10458,276 @@ exports.default = Section;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var menuitems = exports.menuitems = [{
-  name: 'breakfast platters',
-  description: '*Served with two eggs, rice & beans (ALL DAY)',
-  items: [{
-    name: '*Spanish Omelet',
-    price: '$8.01',
-    description: 'Ham, egg, cheese & pico de gallo'
-  }, {
-    name: '*Machaca',
-    price: '$9.08',
-    description: 'Shredded beef, egg, bell perppers, onion & tomatoes'
-  }, {
-    name: '*Steak Ranchero',
-    price: '$9.72',
-    description: 'Steak, egg, & pico de gallo'
-  }, {
-    name: '*Chorizo Plate',
-    price: '$8.76',
-    description: 'Chorizo & egg'
-  }, {
-    name: '*Huevos Rancheros',
-    price: '$7.05',
-    description: 'Two eggs over easy with pico de gallo'
-  }]
-}, {
-  name: 'breakfast burritos',
-  description: '(ALL DAY)',
-  items: [{
-    name: '*Breakfast Burrito',
-    price: '$5.98',
-    description: 'Ham, eggs, cheese & pico de gallo'
-  }, {
-    name: '*Steak & Egg Burrito',
-    price: '$7.33',
-    description: 'Steak, eggs & cheese'
-  }, {
-    name: '*Chorizo',
-    price: '$5.98',
-    description: 'Chorizo & eggs'
-  }, {
-    name: '*Bacon Burrito',
-    price: '$6.09',
-    description: 'Bacon, eggs & cheese'
-  }, {
-    name: '*Country Burrito',
-    price: '$5.98',
-    description: 'Potatoes, eggs & cheese'
-  }, {
-    name: '*Sausage Burrito',
-    price: '$6.09',
-    description: 'Sausage, eggs & cheese'
-  }, {
-    name: '*Machaca Burrito',
-    price: '$6.73',
-    description: 'Shredded beef, bell peppers & onions'
-  }]
-}, {
-  name: 'burritos',
-  description: '',
-  items: [{
-    name: 'Carne Asada',
-    price: '$6.79',
-    description: 'Diced steak, guacamole, pico de gallo'
-  }, {
-    name: 'Carnitas',
-    price: '$6.15',
-    description: 'Diced pork, guacamole, pico de gallo'
-  }, {
-    name: 'Beef',
-    price: '$6.09',
-    description: 'Shredded beef, bell peppers, onions, tomatoes'
-  }, {
-    name: 'Beans',
-    price: '$3.73',
-    description: ''
-  }, {
-    name: 'Adobada',
-    price: '$6.15',
-    description: 'Marinated pork, guacamole, pico de gallo, cabbage'
-  }, {
-    name: 'Arizona',
-    price: '$6.79',
-    description: 'Diced steak, potatoes, cheese, pico de gallo'
-  }, {
-    name: 'Green Chile',
-    price: '$6.15',
-    description: 'Diced pork, green chile sauce'
-  }, {
-    name: 'Chicken',
-    price: '$5.45',
-    description: ''
-  }, {
-    name: '*Fish',
-    price: '$6.15',
-    description: 'Fish, pico de gallo, cabbage, tartar sauce'
-  }, {
-    name: 'Chile Relleno',
-    price: '$6.15',
-    description: 'Two chile rellenos, guacamole, pico de gallo'
-  }, {
-    name: 'Pollo Asado',
-    price: '$6.15',
-    description: 'Grilled chicken, guacamole, pico de gallo'
-  }, {
-    name: '*Camaron (Shrimp)',
-    price: '$7.76',
-    description: ''
-  }, {
-    name: 'Patron',
-    price: '$8.40',
-    description: ''
-  }, {
-    name: 'Texas',
-    price: '$6.15',
-    description: ''
-  }, {
-    name: 'Extreme Fajita',
-    price: '$8.23',
-    description: ''
-  }, {
-    name: 'Veggie',
-    price: '$5.66',
-    description: ''
-  }, {
-    name: 'California',
-    price: '$8.40',
-    description: ''
-  }, {
-    name: 'El Gordo',
-    price: '$9.30',
-    description: ''
-  }, {
-    name: 'Cabeza',
-    price: '$6.79',
-    description: ''
-  }, {
-    name: 'Chimichanga',
-    price: '$8.07',
-    description: 'Sour cream, guacamole, cheese, lettuce & pico de gallo'
-  }]
-}, {
-  name: 'tortas',
-  description: '',
-  items: [{
-    name: 'Chorizo',
-    price: '$5.13',
-    description: 'Chorizo, eggs, guacamole, lettuce & mayo'
-  }, {
-    name: 'Ham',
-    price: '$6.42',
-    description: ''
-  }, {
-    name: 'Machaca',
-    price: '$5.87',
-    description: 'Shredded beef, eggs, bell peppers, onions, tomatoes, guacamole, lettuce & mayo'
-  }, {
-    name: 'Carne Asada',
-    price: '$6.94',
-    description: 'Diced steak, guacamole, lettuce & mayo'
-  }, {
-    name: '*Fish',
-    price: '$5.15',
-    description: 'Fish, tartar sauce, cabbage & mayo'
-  }, {
-    name: 'Adobada',
-    price: '$6.30',
-    description: 'Marinated pork, guacamole, cabbage & mayo'
-  }, {
-    name: 'Chicken',
-    price: '$5.13',
-    description: 'Pollo, guacamole, lettuce & mayo'
-  }, {
-    name: 'Carnitas',
-    price: '$6.30',
-    description: ''
-  }]
-}, {
-  name: 'enchiladas',
-  description: '',
-  items: [{
-    name: 'Cheese',
-    price: '$5.66',
-    description: 'Cheese, lettuce & enchilada sauce'
-  }, {
-    name: 'Chicken',
-    price: '$5.66',
-    description: 'Chicken, cheese, lettuce & enchilada sauce'
-  }, {
-    name: 'Beef',
-    price: '$6.30',
-    description: 'Shredded beef, bell peppers, onions, tomatoes, cheese, lettuce & enchilada sauce'
-  }, {
-    name: 'Two Chile Rellenos',
-    price: '$6.52',
-    description: 'Two chile rellenos, guacamole, sour cream, lettuce & pico de gallo'
-  }]
-}, {
-  name: 'tostadas',
-  description: '',
-  items: [{
-    name: 'Carne Asada',
-    price: '$5.34',
-    description: ''
-  }, {
-    name: 'Carnitas',
-    price: '$4.70',
-    description: ''
-  }, {
-    name: 'Chicken',
-    price: '$4.70',
-    description: ''
-  }, {
-    name: 'Bean',
-    price: '$3.04',
-    description: ''
-  }, {
-    name: 'Chips & Guacamole',
-    price: '$5.87',
-    description: ''
-  }, {
-    name: 'Ceviche Tostada',
-    price: '$5.55',
-    description: ''
-  }]
-}, {
-  name: 'bowls',
-  description: '',
-  items: [{
-    name: 'Carnitas',
-    price: '$6.99',
-    description: ''
-  }, {
-    name: 'Chicken',
-    price: '$6.99',
-    description: ''
-  }, {
-    name: 'Carne Asada',
-    price: '$7.79',
-    description: ''
-  }, {
-    name: 'Adobada',
-    price: '$7.79',
-    description: ''
-  }, {
-    name: 'Shrimp',
-    price: '$8.89',
-    description: ''
-  }]
-}, {
-  name: 'kids',
-  description: 'Includes churro, small juice, w/ choice of chips or french fries',
-  items: [{
-    name: 'Chicken Nuggets',
-    price: '$3.73',
-    description: ''
-  }, {
-    name: 'Jr. Quesadilla',
-    price: '$3.73',
-    description: ''
-  }, {
-    name: 'Jr. Bean & Cheese Burrito',
-    price: '$3.73',
-    description: ''
-  }]
-}];
+var menuitems = exports.menuitems = {
+  breakfastPlatters: {
+    name: "breakfast platters",
+    description: "*Served with two eggs, rice & beans (ALL DAY)",
+    items: [{
+      name: "*Spanish Omelet",
+      price: "$8.29",
+      description: "Ham, egg, cheese & pico de gallo"
+    }, {
+      name: "*Machaca",
+      price: "$10.06",
+      description: "Shredded beef, egg, bell peppers, onion & tomatoes"
+    }, {
+      name: "*Steak Ranchero",
+      price: "$10.06",
+      description: "Steak, egg, & pico de gallo"
+    }, {
+      name: "*Chorizo Plate",
+      price: "$9.07",
+      description: "Chorizo & egg"
+    }, {
+      name: "*Huevos Rancheros",
+      price: "$7.30",
+      description: "Two eggs over easy with pico de gallo"
+    }]
+  },
+  breakfastBurritos: {
+    name: "breakfast burritos",
+    description: "(ALL DAY)",
+    items: [{
+      name: "*Breakfast Burrito",
+      price: "$6.19",
+      description: "Ham, eggs, cheese & pico de gallo"
+    }, {
+      name: "*Steak & Egg Burrito",
+      price: "$7.59",
+      description: "Steak, eggs & cheese"
+    }, {
+      name: "*Chorizo",
+      price: "$6.19",
+      description: "Chorizo & eggs"
+    }, {
+      name: "*Bacon Burrito",
+      price: "$6.30",
+      description: "Bacon, eggs & cheese"
+    }, {
+      name: "*Country Burrito",
+      price: "$6.19",
+      description: "Potatoes, eggs & cheese"
+    }, {
+      name: "*Sausage Burrito",
+      price: "$6.30",
+      description: "Sausage, eggs & cheese"
+    }, {
+      name: "*Machaca Burrito",
+      price: "$6.97",
+      description: "Shredded beef, bell peppers & onions"
+    }]
+  },
+  burritos: {
+    name: "burritos",
+    description: "",
+    items: [{
+      name: "Carne Asada",
+      price: "$7.03",
+      description: "Diced steak, guacamole, pico de gallo"
+    }, {
+      name: "Carnitas",
+      price: "$6.37",
+      description: "Diced pork, guacamole, pico de gallo"
+    }, {
+      name: "Beef",
+      price: "$6.30",
+      description: "Shredded beef, bell peppers, onions, tomatoes"
+    }, {
+      name: "Beans",
+      price: "$3.86",
+      description: ""
+    }, {
+      name: "Adobada",
+      price: "$6.37",
+      description: "Marinated pork, guacamole, pico de gallo, cabbage"
+    }, {
+      name: "Arizona",
+      price: "$7.03",
+      description: "Diced steak, potatoes, cheese, pico de gallo"
+    }, {
+      name: "Green Chile",
+      price: "$6.37",
+      description: "Diced pork, green chile sauce"
+    }, {
+      name: "Chicken",
+      price: "$5.64",
+      description: ""
+    }, {
+      name: "*Fish",
+      price: "$6.37",
+      description: "Fish, pico de gallo, cabbage, tartar sauce"
+    }, {
+      name: "Chile Relleno",
+      price: "$6.37",
+      description: "Two chile rellenos, guacamole, pico de gallo"
+    }, {
+      name: "Pollo Asado",
+      price: "$6.37",
+      description: "Grilled chicken, guacamole, pico de gallo"
+    }, {
+      name: "*Camaron (Shrimp)",
+      price: "$8.03",
+      description: ""
+    }, {
+      name: "Patron",
+      price: "$8.69",
+      description: ""
+    }, {
+      name: "Texas",
+      price: "$6.37",
+      description: ""
+    }, {
+      name: "Extreme Fajita",
+      price: "$8.52",
+      description: ""
+    }, {
+      name: "Veggie",
+      price: "$5.86",
+      description: ""
+    }, {
+      name: "California",
+      price: "$8.69",
+      description: ""
+    }, {
+      name: "El Gordo",
+      price: "$9.63",
+      description: ""
+    }, {
+      name: "Cabeza",
+      price: "$6.79",
+      description: ""
+    }, {
+      name: "Chimichanga",
+      price: "$8.65",
+      description: "Sour cream, guacamole, cheese, lettuce & pico de gallo"
+    }]
+  },
+  tortas: {
+    name: "tortas",
+    description: "",
+    items: [{
+      name: "Chorizo",
+      price: "$5.31",
+      description: "Chorizo, eggs, guacamole, lettuce & mayo"
+    }, {
+      name: "Ham",
+      price: "$6.42",
+      description: ""
+    }, {
+      name: "Machaca",
+      price: "$6.08",
+      description: "Shredded beef, eggs, bell peppers, onions, tomatoes, guacamole, lettuce & mayo"
+    }, {
+      name: "Carne Asada",
+      price: "$7.18",
+      description: "Diced steak, guacamole, lettuce & mayo"
+    }, {
+      name: "*Fish",
+      price: "$5.33",
+      description: "Fish, tartar sauce, cabbage & mayo"
+    }, {
+      name: "Adobada",
+      price: "$6.52",
+      description: "Marinated pork, guacamole, cabbage & mayo"
+    }, {
+      name: "Chicken",
+      price: "$5.31",
+      description: "Pollo, guacamole, lettuce & mayo"
+    }, {
+      name: "Carnitas",
+      price: "$6.52",
+      description: ""
+    }]
+  },
+  enchiladas: {
+    name: "enchiladas",
+    description: "",
+    items: [{
+      name: "Cheese",
+      price: "$5.86",
+      description: "Cheese, lettuce & enchilada sauce"
+    }, {
+      name: "Chicken",
+      price: "$5.86",
+      description: "Chicken, cheese, lettuce & enchilada sauce"
+    }, {
+      name: "Beef",
+      price: "$6.52",
+      description: "Shredded beef, bell peppers, onions, tomatoes, cheese, lettuce & enchilada sauce"
+    }, {
+      name: "Two Chile Rellenos",
+      price: "$6.75",
+      description: "Two chile rellenos, guacamole, sour cream, lettuce & pico de gallo"
+    }]
+  },
+  tostadas: {
+    name: "tostadas",
+    description: "",
+    items: [{
+      name: "Chicken",
+      price: "$4.86",
+      description: ""
+    }, {
+      name: "Carne Asada",
+      price: "$5.86",
+      description: ""
+    }, {
+      name: "Carnitas",
+      price: "$4.86",
+      description: ""
+    }, {
+      name: "Bean",
+      price: "$3.15",
+      description: ""
+    }, {
+      name: "Chips & Guacamole",
+      price: "$6.08",
+      description: ""
+    }]
+  },
+  bowls: {
+    name: "bowls",
+    description: "",
+    items: [{
+      name: "Carnitas",
+      price: "$7.99",
+      description: ""
+    }, {
+      name: "Chicken",
+      price: "$7.99",
+      description: ""
+    }, {
+      name: "Carne Asada",
+      price: "$7.99",
+      description: ""
+    }, {
+      name: "Adobada",
+      price: "$7.99",
+      description: ""
+    }, {
+      name: "Shrimp",
+      price: "$8.99",
+      description: ""
+    }]
+  },
+  kids: {
+    name: "kids",
+    description: "Includes churro, small juice, w/ choice of chips or french fries",
+    items: [{
+      name: "Chicken Nuggets",
+      price: "$3.73",
+      description: ""
+    }, {
+      name: "Jr. Quesadilla",
+      price: "$3.73",
+      description: ""
+    }, {
+      name: "Jr. Bean & Cheese Burrito",
+      price: "$3.73",
+      description: ""
+    }]
+  }
+};
 
 /***/ }),
 /* 91 */
@@ -11627,100 +11620,130 @@ var columnWidth = (windowWidth - 4) / 4;
 
 var styles = _aphrodite.StyleSheet.create({
   columns: {
-    display: 'flex',
-    justifyContent: 'flex-start'
+    display: "flex",
+    justifyContent: "flex-start"
   },
   column: {
     flex: 1,
     padding: 10,
-    position: 'relative',
+    position: "relative",
     height: 1080
   },
   disclaimer: {
-    alignSelf: 'flex-end',
-    position: 'absolute',
-    bottom: 20,
+    alignSelf: "flex-end",
     flex: 1,
-    color: 'rgb(222, 245, 84)'
+    color: "rgb(222, 245, 84)"
   }
-
 });
 
 var Extras = function (_React$Component) {
   _inherits(Extras, _React$Component);
 
   function Extras() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, Extras);
 
-    return _possibleConstructorReturn(this, (Extras.__proto__ || Object.getPrototypeOf(Extras)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Extras.__proto__ || Object.getPrototypeOf(Extras)).call.apply(_ref, [this].concat(args))), _this), _this.resize = function () {
+      return _this.forceUpdate();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Extras, [{
-    key: 'render',
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener("resize", this.resize);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener("resize", this.resize);
+    }
+  }, {
+    key: "render",
     value: function render() {
-      var column1 = _menuitems.menuitems.slice(0, 2).map(function (section, i) {
-        return _react2.default.createElement(_Section2.default, {
-          key: i,
-          name: section.name,
-          description: section.description,
-          items: section.items });
-      });
-
-      var column2 = _menuitems.menuitems[2];
-      var column3 = _menuitems.menuitems.slice(3, 5).map(function (section, i) {
-        return _react2.default.createElement(_Section2.default, {
-          key: i,
-          name: section.name,
-          description: section.description,
-          items: section.items });
-      });
-
       return _react2.default.createElement(
-        'div',
+        "div",
         { className: (0, _aphrodite.css)(styles.columns) },
         _react2.default.createElement(
-          'div',
+          "div",
           { className: (0, _aphrodite.css)(styles.column) },
-          column1,
+          _react2.default.createElement(_Section2.default, {
+            name: _menuitems.menuitems.breakfastPlatters.name,
+            description: _menuitems.menuitems.breakfastPlatters.description,
+            items: _menuitems.menuitems.breakfastPlatters.items
+          }),
+          _react2.default.createElement(_Section2.default, {
+            name: _menuitems.menuitems.breakfastBurritos.name,
+            description: _menuitems.menuitems.breakfastBurritos.description,
+            items: _menuitems.menuitems.breakfastBurritos.items
+          }),
           _react2.default.createElement(_Promo2.default, null)
         ),
         _react2.default.createElement(
-          'div',
+          "div",
           { className: (0, _aphrodite.css)(styles.column) },
           _react2.default.createElement(_Section2.default, {
-            name: column2.name,
-            description: column2.description,
-            items: column2.items
+            name: _menuitems.menuitems.burritos.name,
+            description: _menuitems.menuitems.burritos.description,
+            items: _menuitems.menuitems.burritos.items
           }),
           _react2.default.createElement(
-            'div',
+            "div",
             { className: (0, _aphrodite.css)(styles.disclaimer) },
-            '*Consuming raw eggs, undercooked meat or seafood may increase your risk of foodbourne illness, especially if you ### medical condition. Prices subject to change without notice. Tax not included.'
+            "*Consuming raw eggs, undercooked meat or seafood may increase your risk of foodbourne illness, especially if you have a certain medical condition."
+          ),
+          _react2.default.createElement(
+            "div",
+            {
+              className: (0, _aphrodite.css)(styles.disclaimer),
+              style: {
+                borderTop: "2px solid rgb(222, 245, 84)",
+                padding: "5px 0 5px 0"
+              }
+            },
+            "*Consumir huevo, carne cruda o mariscos puede aumentar el riesgo y da\xF1ar su salud, especialmente si quien las come padece de ciertas condiciones m\xE9dicas."
           )
         ),
         _react2.default.createElement(
-          'div',
+          "div",
           { className: (0, _aphrodite.css)(styles.column) },
-          column3,
+          _react2.default.createElement(_Section2.default, {
+            name: _menuitems.menuitems.tortas.name,
+            description: _menuitems.menuitems.tortas.description,
+            items: _menuitems.menuitems.tortas.items
+          }),
+          _react2.default.createElement(_Section2.default, {
+            name: _menuitems.menuitems.enchiladas.name,
+            description: _menuitems.menuitems.enchiladas.description,
+            items: _menuitems.menuitems.enchiladas.items
+          }),
           _react2.default.createElement(_Promo4.default, null)
         ),
         _react2.default.createElement(
-          'div',
+          "div",
           { className: (0, _aphrodite.css)(styles.column) },
           _react2.default.createElement(_Section2.default, {
-            name: _menuitems.menuitems[5].name,
-            description: _menuitems.menuitems[5].description,
-            items: _menuitems.menuitems[5].items }),
+            name: _menuitems.menuitems.tostadas.name,
+            description: _menuitems.menuitems.tostadas.description,
+            items: _menuitems.menuitems.tostadas.items
+          }),
           _react2.default.createElement(_Promo6.default, null),
           _react2.default.createElement(_Section2.default, {
-            name: _menuitems.menuitems[6].name,
-            description: _menuitems.menuitems[6].description,
-            items: _menuitems.menuitems[6].items
+            name: _menuitems.menuitems.bowls.name,
+            description: _menuitems.menuitems.bowls.description,
+            items: _menuitems.menuitems.bowls.items
           }),
           _react2.default.createElement(_Section2.default, {
-            name: _menuitems.menuitems[7].name,
-            description: _menuitems.menuitems[7].description,
-            items: _menuitems.menuitems[7].items
+            name: _menuitems.menuitems.kids.name,
+            description: _menuitems.menuitems.kids.description,
+            items: _menuitems.menuitems.kids.items
           })
         )
       );
@@ -11733,7 +11756,7 @@ var Extras = function (_React$Component) {
 exports.default = Extras;
 
 
-_reactDom2.default.render(_react2.default.createElement(Extras, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(Extras, null), document.getElementById("app"));
 
 /***/ }),
 /* 99 */
