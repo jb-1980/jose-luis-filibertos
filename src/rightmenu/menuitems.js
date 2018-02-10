@@ -172,7 +172,7 @@ export const menuitems = {
       },
       {
         name: "Lengua",
-        price: "$6.79",
+        price: "$7.79",
         description: "",
       },
       {

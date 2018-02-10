@@ -12,7 +12,7 @@ const columnWidth = (windowWidth - 4) / 4
 const styles = StyleSheet.create({
   section: {
     ':not(:first-child)': {
-      marginTop: 20,
+      marginTop: 15,
     },
   },
   sectionHead: {
