@@ -107,6 +107,11 @@ export const menuitems = {
         price: '$5.41',
         description: '',
       },
+      {
+        name: '5 Rolled Tacos w/ Carne Asada',
+        price: '$9.23',
+        description: '',
+      }
     ],
   },
   sides: {
@@ -206,6 +211,11 @@ export const menuitems = {
       {
         name: 'Camaron',
         price: '$10.17',
+        description: '',
+      },
+      {
+        name: 'Mar y tierra',
+        price: '$11.17',
         description: '',
       },
     ],

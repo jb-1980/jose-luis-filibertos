@@ -171,6 +171,11 @@ export const menuitems = {
         description: "",
       },
       {
+        name: "Lengua",
+        price: "$6.79",
+        description: "",
+      },
+      {
         name: "Chimichanga",
         price: "$8.65",
         description: "Sour cream, guacamole, cheese, lettuce & pico de gallo",
