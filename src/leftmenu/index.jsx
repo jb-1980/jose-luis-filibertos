@@ -91,11 +91,7 @@ export default class Menu extends React.Component {
               description={menuitems.tacos.description}
               items={menuitems.tacos.items}
             />
-            <Section
-              name={menuitems.salads.name}
-              description={menuitems.salads.description}
-              items={menuitems.salads.items}
-            />
+
             <Section
               name={menuitems.sides.name}
               description={menuitems.sides.description}
@@ -107,6 +103,11 @@ export default class Menu extends React.Component {
           <MainPromo />
           <div className={css(styles.underPromo)}>
             <div className={css(styles.column)}>
+              <Section
+                name={menuitems.salads.name}
+                description={menuitems.salads.description}
+                items={menuitems.salads.items}
+              />
               <Section
                 name={menuitems.juicesAndAguas.name}
                 description={menuitems.juicesAndAguas.description}

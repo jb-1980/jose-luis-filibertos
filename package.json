@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
-    "dev-build": "webpack"
+    "dev-build": "webpack -w"
   },
   "devDependencies": {
     "aphrodite": "^1.2.0",
