@@ -43,7 +43,7 @@ const Promo1 = () =>
           src={`../../assets/images/2017/quesadillas_supreme/${promo.img}`}
           style={{
             width: windowWidth / 4 - 20,
-            height: (windowWidth / 4 - 20) * (18 / 23),
+            height: (windowWidth / 4 - 20) * (15 / 23),
           }}
         />
       </div>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   promosContainer: {
     flex: 1,
     margin: 10,
-    height: 420,
+    height: 390,
   },
 })
 

@@ -104,11 +104,6 @@ export default class Menu extends React.Component {
           <div className={css(styles.underPromo)}>
             <div className={css(styles.column)}>
               <Section
-                name={menuitems.salads.name}
-                description={menuitems.salads.description}
-                items={menuitems.salads.items}
-              />
-              <Section
                 name={menuitems.juicesAndAguas.name}
                 description={menuitems.juicesAndAguas.description}
                 items={menuitems.juicesAndAguas.items}
@@ -124,13 +119,19 @@ export default class Menu extends React.Component {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
               }}
             >
+              <Section
+                name={menuitems.salads.name}
+                description={menuitems.salads.description}
+                items={menuitems.salads.items}
+              />
               <img
                 className={css(styles.logo)}
                 src={"../../assets/images/filibertos-text.png"}
+                style={{
+                  marginTop: 40,
+                }}
               />
               <div className={css(styles.catchPhrase)}>
                 We don't just serve fast food, we serve fresh food fast.
