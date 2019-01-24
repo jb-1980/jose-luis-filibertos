@@ -28,42 +28,6 @@
         font-family: 'Special Elite';
       }
 
-      /*#super-nachos {
-        transform: translateX(-100%);
-        opacity: 0;
-        transition: 1s ease-in-out;
-      }
-
-      #super-nachos.active {
-        transform: translateX(0%);
-        opacity: 1;
-      }
-
-      #menudo {
-        transform: translateY(100%);
-        opacity: 0;
-        transition: 1s ease-in-out;
-      }
-
-      #menudo.active {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-
-      #carne-asada-fries {
-        transform: translateX(100%);
-        opacity: 0;
-        transition: 1s ease-in-out;
-      }
-
-      #carne-asada-fries.active {
-        transform: translateX(0%);
-        opacity: 1;
-      }
-
-      #super-nachos:first-child {
-        transition: 0.3s;
-      }*/
       .promo-image {
         opacity: 0;
         position: absolute;
@@ -123,14 +87,6 @@
 
     </script>
     <script>
-      // function toggleActive(_id){
-      //   var element = document.getElementById(_id)
-      //   element.classList.toggle('active')
-      // }
-      //
-      // setInterval(toggleActive, 8000, 'super-nachos')
-      // setInterval(toggleActive, 8050, 'menudo')
-      // setInterval(toggleActive, 7000, 'carne-asada-fries')
       function transitionPromo() {
         var nodes = Array.from(document.querySelectorAll('.promo-image'))
         if (nodes.length === 0) return

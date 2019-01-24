@@ -3,17 +3,18 @@ const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
 
-const pathsToClean = ["dist"]
+const outputPath = process.env.NODE_ENV === "production" ? "dist" : "staging"
+const pathsToClean = [outputPath]
 
 var config = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loaders: ["babel-loader"],
+        loader: "babel-loader",
         exclude: /node_modules/,
         include: __dirname,
       },
@@ -31,14 +32,17 @@ var config = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
-    new CleanWebpackPlugin(pathsToClean),
+    new CleanWebpackPlugin(pathsToClean, {
+      watch: false,
+      exclude: ["index.html"],
+    }),
   ],
 }
 
-var leftMenuConfig = Object.assign({}, config, {
+var menuConfig = Object.assign({}, config, {
   entry: "./src/leftmenu/index",
   output: {
-    path: path.join(__dirname, "dist/leftmenu"),
+    path: path.join(__dirname, outputPath + "/leftmenu"),
     filename: "bundle.[chunkHash].js",
   },
   plugins: [
@@ -53,7 +57,7 @@ var leftMenuConfig = Object.assign({}, config, {
 var comboConfig = Object.assign({}, config, {
   entry: "./src/combo/index",
   output: {
-    path: path.join(__dirname, "dist/combo"),
+    path: path.join(__dirname, outputPath + "/combo"),
     filename: "bundle.[chunkHash].js",
   },
   plugins: [
@@ -65,10 +69,10 @@ var comboConfig = Object.assign({}, config, {
   ],
 })
 
-var rightMenuConfig = Object.assign({}, config, {
+var extrasConfig = Object.assign({}, config, {
   entry: "./src/rightmenu/index",
   output: {
-    path: path.join(__dirname, "dist/rightmenu"),
+    path: path.join(__dirname, outputPath + "/rightmenu"),
     filename: "bundle.[chunkHash].js",
   },
   plugins: [
@@ -80,8 +84,4 @@ var rightMenuConfig = Object.assign({}, config, {
   ],
 })
 
-module.exports = [
-  leftMenuConfig,
-  comboConfig,
-  rightMenuConfig,
-]
+module.exports = [menuConfig, comboConfig, extrasConfig]
