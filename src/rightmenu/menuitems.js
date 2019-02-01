@@ -321,8 +321,7 @@ export const menuitems = {
   },
   kids: {
     name: "kids",
-    description:
-      "Includes churro, small juice, w/ choice of chips or french fries",
+    description: "Includes churro, w/ choice of chips or french fries",
     items: [
       {
         name: "Chicken Nuggets",
