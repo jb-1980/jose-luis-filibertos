@@ -8,16 +8,13 @@ import DrinkIcons from "./DrinkIcons"
 import MainPromo from "./MainPromo"
 import Promo1 from "./Promo1"
 
-const windowWidth = window.innerWidth
-const windowHeight = window.innerHeight
-
 const styles = StyleSheet.create({
   menu: {
     display: "flex",
   },
   leftHalf: {
-    width: windowWidth / 2,
-    height: windowHeight,
+    width: 960,
+    height: 1080,
     display: "flex",
     ":first-child": {
       marginLeft: 0,
@@ -27,13 +24,13 @@ const styles = StyleSheet.create({
     },
   },
   rightHalf: {
-    width: windowWidth / 2,
-    height: windowHeight,
+    width: 960,
+    height: 1080,
     display: "flex",
     flexDirection: "column",
   },
   column: {
-    width: windowWidth / 4,
+    width: 480,
     flex: 1,
     marginLeft: 7,
     marginRight: 7,
@@ -43,7 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   logo: {
-    width: windowWidth / 4 - 14,
+    width: 480 - 14,
   },
   catchPhrase: {
     textAlign: "center",
