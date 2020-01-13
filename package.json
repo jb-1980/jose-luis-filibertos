@@ -4,11 +4,13 @@
   "description": "A digital menu for a Filibertos restaurant",
   "main": "index.js",
   "author": "Joseph Gilgen <gilgenlabs@gmail.com>",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev-build": "webpack",
     "build": "NODE_ENV=production webpack -p",
-    "stage": "NODE_ENV=staging webpack -p"
+    "stage": "NODE_ENV=staging webpack -p",
+    "update-prices": "node --experimental-modules ./src/priceupdater.js"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

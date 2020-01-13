@@ -1,10 +1,12 @@
-import { combos } from "./combo/combos"
-import { menuitems as leftItems } from "./leftmenu/menuitems"
-import { menuitems as rightItems } from "./rightmenu/menuitems"
+import { combos } from "./combo/combos-2019.js"
+import { menuitems as leftItems } from "./leftmenu/menuitems-2019.js"
+import { menuitems as rightItems } from "./rightmenu/menuitems-2019.js"
 import fs from "fs"
 
+const PRICE_INCREASE = 1.07
+
 const _combos = combos.map(combo => {
-  const price = Number(combo.price.replace("$", "")) * 1.035
+  const price = Number(combo.price.replace("$", "")) * PRICE_INCREASE
   return {
     ...combo,
     price: "$" + price.toFixed(2),
@@ -14,7 +16,7 @@ const _combos = combos.map(combo => {
 const left_menuitems = Object.entries(leftItems).reduce(
   (acc, [name, values]) => {
     const items = values.items.map(i => {
-      const price = Number(i.price.replace("$", "")) * 1.035
+      const price = Number(i.price.replace("$", "")) * PRICE_INCREASE
 
       return { ...i, price: "$" + price.toFixed(2) }
     })
@@ -28,7 +30,7 @@ const left_menuitems = Object.entries(leftItems).reduce(
 const right_menuitems = Object.entries(rightItems).reduce(
   (acc, [name, values]) => {
     const items = values.items.map(i => {
-      const price = Number(i.price.replace("$", "")) * 1.035
+      const price = Number(i.price.replace("$", "")) * PRICE_INCREASE
 
       return { ...i, price: "$" + price.toFixed(2) }
     })
@@ -38,14 +40,13 @@ const right_menuitems = Object.entries(rightItems).reduce(
   },
   {}
 )
-const combosString = "export const combos = " + JSON.stringify(_combos, null, 2)
 
+const combosString = "export const combos = " + JSON.stringify(_combos, null, 2)
 const lString =
   "export const menuitems = " + JSON.stringify(left_menuitems, null, 2)
 const rString =
   "export const menuitems = " + JSON.stringify(right_menuitems, null, 2)
 
-fs.writeFileSync("combos.js", combosString)
-
-fs.writeFileSync("rmenuitems.js", rString)
-fs.writeFileSync("lmenuitems.js", lString)
+fs.writeFileSync("./src/combo/combos.js", combosString)
+fs.writeFileSync("./src/rightmenu/menuitems.js", rString)
+fs.writeFileSync("./src/leftmenu/menuitems.js", lString)
