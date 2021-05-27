@@ -5,27 +5,27 @@ export const menuitems = {
     items: [
       {
         name: "*Spanish Omelet",
-        price: "$9.64",
+        price: "$9.18",
         description: "Ham, egg, cheese & pico de gallo",
       },
       {
         name: "*Machaca",
-        price: "$11.70",
+        price: "$11.14",
         description: "Shredded beef, egg, bell peppers, onion & tomatoes",
       },
       {
         name: "*Steak Ranchero",
-        price: "$11.70",
+        price: "$11.14",
         description: "Steak, egg, & pico de gallo",
       },
       {
         name: "*Chorizo Plate",
-        price: "$10.55",
+        price: "$10.05",
         description: "Chorizo & egg",
       },
       {
         name: "*Huevos Rancheros",
-        price: "$8.49",
+        price: "$8.09",
         description: "Two eggs over easy with pico de gallo",
       },
     ],
@@ -36,37 +36,37 @@ export const menuitems = {
     items: [
       {
         name: "*Breakfast Burrito",
-        price: "$7.40",
+        price: "$7.05",
         description: "Ham, eggs, cheese & pico de gallo",
       },
       {
         name: "*Steak & Egg Burrito",
-        price: "$9.08",
+        price: "$8.65",
         description: "Steak, eggs & cheese",
       },
       {
         name: "*Chorizo",
-        price: "$7.40",
+        price: "$7.05",
         description: "Chorizo & eggs",
       },
       {
         name: "*Bacon Burrito",
-        price: "$7.53",
+        price: "$7.17",
         description: "Bacon, eggs & cheese",
       },
       {
         name: "*Country Burrito",
-        price: "$7.20",
+        price: "$6.86",
         description: "Potatoes, eggs & cheese",
       },
       {
         name: "*Sausage Burrito",
-        price: "$7.53",
+        price: "$7.17",
         description: "Sausage, eggs & cheese",
       },
       {
         name: "*Machaca Burrito",
-        price: "$8.33",
+        price: "$7.93",
         description: "Shredded beef, bell peppers & onions",
       },
     ],
@@ -77,107 +77,107 @@ export const menuitems = {
     items: [
       {
         name: "Carne Asada",
-        price: "$8.18",
+        price: "$7.79",
         description: "Diced steak, guacamole, pico de gallo",
       },
       {
         name: "Carnitas",
-        price: "$7.40",
+        price: "$7.05",
         description: "Diced pork, guacamole, pico de gallo",
       },
       {
         name: "Beef",
-        price: "$7.33",
+        price: "$6.98",
         description: "Shredded beef, bell peppers, onions, tomatoes",
       },
       {
         name: "Beans",
-        price: "$4.49",
+        price: "$4.28",
         description: "",
       },
       {
         name: "Adobada",
-        price: "$7.40",
+        price: "$7.05",
         description: "Marinated pork, guacamole, pico de gallo, cabbage",
       },
       {
         name: "Arizona",
-        price: "$8.18",
+        price: "$7.79",
         description: "Diced steak, potatoes, cheese, pico de gallo",
       },
       {
         name: "Green Chile",
-        price: "$7.40",
+        price: "$7.05",
         description: "Diced pork, green chile sauce",
       },
       {
         name: "Chicken",
-        price: "$6.56",
+        price: "$6.25",
         description: "",
       },
       {
         name: "*Fish",
-        price: "$7.40",
+        price: "$7.05",
         description: "Fish, pico de gallo, cabbage, tartar sauce",
       },
       {
         name: "Chile Relleno",
-        price: "$7.40",
+        price: "$7.05",
         description: "Two chile rellenos, guacamole, pico de gallo",
       },
       {
         name: "Pollo Asado",
-        price: "$7.40",
+        price: "$7.05",
         description: "Grilled chicken, guacamole, pico de gallo",
       },
       {
         name: "*Camaron (Shrimp)",
-        price: "$9.33",
+        price: "$8.89",
         description: "",
       },
       {
         name: "Patron",
-        price: "$10.10",
+        price: "$9.62",
         description: "",
       },
       {
         name: "Texas",
-        price: "$7.40",
+        price: "$7.05",
         description: "",
       },
       {
         name: "Extreme Fajita",
-        price: "$9.91",
+        price: "$9.44",
         description: "",
       },
       {
         name: "Veggie",
-        price: "$6.81",
+        price: "$6.49",
         description: "",
       },
       {
         name: "California",
-        price: "$10.10",
+        price: "$9.62",
         description: "",
       },
       {
         name: "El Gordo",
-        price: "$11.20",
+        price: "$10.67",
         description: "",
       },
       {
         name: "Cabeza",
-        price: "$8.18",
+        price: "$7.79",
         description: "",
       },
       {
         name: "Lengua",
-        price: "$9.05",
+        price: "$8.62",
         description: "",
       },
       {
         name: "Chimichanga",
-        price: "$10.06",
+        price: "$9.58",
         description: "Sour cream, guacamole, cheese, lettuce & pico de gallo",
       },
     ],
@@ -188,43 +188,43 @@ export const menuitems = {
     items: [
       {
         name: "Chorizo",
-        price: "$6.18",
+        price: "$5.89",
         description: "Chorizo, eggs, guacamole, lettuce & mayo",
       },
       {
         name: "Ham",
-        price: "$7.72",
+        price: "$7.35",
         description: "",
       },
       {
         name: "Machaca",
-        price: "$7.07",
+        price: "$6.73",
         description:
           "Shredded beef, eggs, bell peppers, onions, tomatoes, guacamole, lettuce & mayo",
       },
       {
         name: "Carne Asada",
-        price: "$8.35",
+        price: "$7.95",
         description: "Diced steak, guacamole, lettuce & mayo",
       },
       {
         name: "*Fish",
-        price: "$6.21",
+        price: "$5.91",
         description: "Fish, tartar sauce, cabbage & mayo",
       },
       {
         name: "Adobada",
-        price: "$7.58",
+        price: "$7.22",
         description: "Marinated pork, guacamole, cabbage & mayo",
       },
       {
         name: "Chicken",
-        price: "$6.18",
+        price: "$5.89",
         description: "Pollo, guacamole, lettuce & mayo",
       },
       {
         name: "Carnitas",
-        price: "$7.58",
+        price: "$7.22",
         description: "",
       },
     ],
@@ -235,23 +235,23 @@ export const menuitems = {
     items: [
       {
         name: "Cheese",
-        price: "$6.81",
+        price: "$6.49",
         description: "Cheese, lettuce & enchilada sauce",
       },
       {
         name: "Chicken",
-        price: "$6.81",
+        price: "$6.49",
         description: "Chicken, cheese, lettuce & enchilada sauce",
       },
       {
         name: "Beef",
-        price: "$7.58",
+        price: "$7.22",
         description:
           "Shredded beef, bell peppers, onions, tomatoes, cheese, lettuce & enchilada sauce",
       },
       {
         name: "Two Chile Rellenos",
-        price: "$7.85",
+        price: "$7.48",
         description:
           "Two chile rellenos, guacamole, sour cream, lettuce & pico de gallo",
       },
@@ -263,27 +263,27 @@ export const menuitems = {
     items: [
       {
         name: "Chicken",
-        price: "$5.65",
+        price: "$5.38",
         description: "",
       },
       {
         name: "Carne Asada",
-        price: "$6.43",
+        price: "$6.12",
         description: "",
       },
       {
         name: "Carnitas",
-        price: "$5.65",
+        price: "$5.38",
         description: "",
       },
       {
         name: "Bean",
-        price: "$3.66",
+        price: "$3.49",
         description: "",
       },
       {
         name: "Chips & Guacamole",
-        price: "$7.07",
+        price: "$6.73",
         description: "",
       },
     ],
@@ -294,27 +294,27 @@ export const menuitems = {
     items: [
       {
         name: "Carnitas",
-        price: "$9.00",
+        price: "$8.57",
         description: "",
       },
       {
         name: "Chicken",
-        price: "$9.00",
+        price: "$8.57",
         description: "",
       },
       {
         name: "Carne Asada",
-        price: "$10.04",
+        price: "$9.56",
         description: "",
       },
       {
         name: "Adobada",
-        price: "$9.00",
+        price: "$8.57",
         description: "",
       },
       {
         name: "Shrimp",
-        price: "$11.33",
+        price: "$10.79",
         description: "",
       },
     ],
@@ -325,17 +325,17 @@ export const menuitems = {
     items: [
       {
         name: "Chicken Nuggets",
-        price: "$5.24",
+        price: "$4.99",
         description: "",
       },
       {
         name: "Jr. Quesadilla",
-        price: "$5.24",
+        price: "$4.99",
         description: "",
       },
       {
         name: "Jr. Bean & Cheese Burrito",
-        price: "$5.24",
+        price: "$4.99",
         description: "",
       },
     ],

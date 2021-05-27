@@ -3,8 +3,8 @@ import ReactDOM from "react-dom"
 import { StyleSheet, css } from "aphrodite"
 import { combos } from "./combos"
 
-const windowWidth = window.innerWidth
-const windowHeight = window.innerHeight
+const windowWidth = 1920
+const windowHeight = 1080
 
 const containerWidth = windowWidth / 6
 const containerHeight = windowHeight / 4
@@ -81,16 +81,6 @@ const styles = StyleSheet.create({
 })
 
 export default class Combos extends React.Component {
-  resize = () => this.forceUpdate()
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.resize)
-  }
-
   render() {
     const combosComponents = combos.map((combo, i) => (
       <div className={css(styles.combo)} key={i} id={combo._id}>

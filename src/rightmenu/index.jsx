@@ -8,13 +8,9 @@ import Promo1 from "./Promo1"
 import Promo2 from "./Promo2"
 import Promo3 from "./Promo3"
 
-const windowWidth = window.innerWidth
-const windowHeight = window.innerHeight
-
-const columnWidth = (windowWidth - 4) / 4
-
 const styles = StyleSheet.create({
   columns: {
+    width: 1920,
     display: "flex",
     justifyContent: "flex-start",
   },
@@ -32,16 +28,6 @@ const styles = StyleSheet.create({
 })
 
 export default class Extras extends React.Component {
-  resize = () => this.forceUpdate()
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.resize)
-  }
-
   render() {
     return (
       <div className={css(styles.columns)}>

@@ -1,11 +1,11 @@
-import { combos } from "./combo/combos-2019.js"
-import { menuitems as leftItems } from "./leftmenu/menuitems-2019.js"
-import { menuitems as rightItems } from "./rightmenu/menuitems-2019.js"
+import { combos } from "./combo/combos-2021.js"
+import { menuitems as leftItems } from "./leftmenu/menuitems-2021.js"
+import { menuitems as rightItems } from "./rightmenu/menuitems-2021.js"
 import fs from "fs"
 
-const PRICE_INCREASE = 1.07
+const PRICE_INCREASE = 1.05
 
-const _combos = combos.map(combo => {
+const _combos = combos.map((combo) => {
   const price = Number(combo.price.replace("$", "")) * PRICE_INCREASE
   return {
     ...combo,
@@ -15,7 +15,7 @@ const _combos = combos.map(combo => {
 
 const left_menuitems = Object.entries(leftItems).reduce(
   (acc, [name, values]) => {
-    const items = values.items.map(i => {
+    const items = values.items.map((i) => {
       const price = Number(i.price.replace("$", "")) * PRICE_INCREASE
 
       return { ...i, price: "$" + price.toFixed(2) }
@@ -29,7 +29,7 @@ const left_menuitems = Object.entries(leftItems).reduce(
 
 const right_menuitems = Object.entries(rightItems).reduce(
   (acc, [name, values]) => {
-    const items = values.items.map(i => {
+    const items = values.items.map((i) => {
       const price = Number(i.price.replace("$", "")) * PRICE_INCREASE
 
       return { ...i, price: "$" + price.toFixed(2) }
