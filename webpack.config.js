@@ -36,7 +36,7 @@ var config = {
     new CleanWebpackPlugin({
       watch: false,
       exclude: ["index.html"],
-      dry: true,
+      // dry: true,
     }),
   ],
 }
