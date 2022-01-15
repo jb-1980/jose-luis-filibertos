@@ -73,29 +73,4 @@
 
       .promo3.active > .promo3-image {
         transform: scale(1);
-      }</style></head><body><div id="app"><script src="bundle.%5BchunkHash%5D.js"></script><script>function changePromo(className){
-
-        var nodes = Array.from(document.querySelectorAll(className))
-        var activeNodeIndx
-        var activeNode = nodes.find((node, i) => {
-          if (node.classList.contains('active')) {
-            activeNodeIndx = i
-            return true
-          }
-        })
-        if (activeNodeIndx === undefined) {
-          nodes[0].classList.add('active')
-          return
-        } else {
-          activeNode.classList.remove('active')
-          var nextIndex = activeNodeIndx === 0 ? nodes.length -1 : activeNodeIndx - 1
-          nodes[nextIndex].classList.add('active')
-        }
-      }
-
-      changePromo('.promo1')
-      changePromo('.promo2')
-      changePromo('.promo3')
-      setInterval(changePromo, 5555, '.promo1')
-      setInterval(changePromo, 5432, '.promo2')
-      setInterval(changePromo, 4567, '.promo3')</script></div></body></html>
+      }</style></head><body><div id="app"><script src="bundle.810a45ee32d8a7c08e75.js"></script></div></body></html>
