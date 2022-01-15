@@ -22,30 +22,41 @@ const promos = [
   },
 ]
 
-const Promo2 = () => (
-  <div className="promo2-container">
-    {promos.map((promo, i) => (
-      <div
-        className="promo2"
-        key={i}
-        style={{
-          height: 330,
-          borderRadius: 10,
-        }}
-      >
-        <img
-          className="promo2-image"
-          src={`../../assets/images/2017/enchiladas/${promo.img}`}
+const Promo2 = () => {
+  const [currentPromo, setCurrentPromo] = React.useState(promos[0].name)
+  React.useEffect(() => {
+    let intervalId = setTimeout(() => {
+      const indx = promos.findIndex((p) => p.name === currentPromo)
+      const nextIndx = indx === promos.length - 1 ? 0 : indx + 1
+      setCurrentPromo(promos[nextIndx].name)
+    }, 5432)
+    return () => clearInterval(intervalId)
+  }, [currentPromo])
+  return (
+    <div className="promo2-container">
+      {promos.map((promo, i) => (
+        <div
+          className={`promo2${currentPromo === promo.name ? " active" : ""}`}
+          key={i}
           style={{
-            borderRadius: 10,
             height: 330,
-            width: columnWidth - 20,
+            borderRadius: 10,
           }}
-        />
-        <div className="promo2-title">{promo.name}</div>
-      </div>
-    ))}
-  </div>
-)
+        >
+          <img
+            className="promo2-image"
+            src={`../../assets/images/2017/enchiladas/${promo.img}`}
+            style={{
+              borderRadius: 10,
+              height: 330,
+              width: columnWidth - 20,
+            }}
+          />
+          <div className="promo2-title">{promo.name}</div>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default Promo2

@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-  	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Extras Menu</title>
     <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
     <!-- <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> -->
@@ -89,34 +89,5 @@
   <body>
     <div id="app"></app>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
-    <script>
-      function changePromo(className){
-
-        var nodes = Array.from(document.querySelectorAll(className))
-        var activeNodeIndx
-        var activeNode = nodes.find((node, i) => {
-          if (node.classList.contains('active')) {
-            activeNodeIndx = i
-            return true
-          }
-        })
-        if (activeNodeIndx === undefined) {
-          nodes[0].classList.add('active')
-          return
-        } else {
-          activeNode.classList.remove('active')
-          var nextIndex = activeNodeIndx === 0 ? nodes.length -1 : activeNodeIndx - 1
-          nodes[nextIndex].classList.add('active')
-        }
-      }
-
-      changePromo('.promo1')
-      changePromo('.promo2')
-      changePromo('.promo3')
-      setInterval(changePromo, 5555, '.promo1')
-      setInterval(changePromo, 5432, '.promo2')
-      setInterval(changePromo, 4567, '.promo3')
-    </script>
-
   </body>
 </html>

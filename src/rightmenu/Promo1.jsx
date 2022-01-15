@@ -26,31 +26,44 @@ const breakfastPlatters = [
 const windowWidth = 1920
 const columnWidth = (windowWidth - 4) / 4
 
-const Promo1 = () => (
-  <div>
-    {breakfastPlatters.map((image, i) => {
-      return (
-        <div
-          key={i}
-          className="promo1"
-          style={{
-            width: columnWidth - 20,
-          }}
-        >
-          <div className="promo1-text">{image.name}</div>
-          <img
-            src={`../../assets/images/breakfastplatters/${image.img}`}
+const Promo1 = () => {
+  const [currentPromo, setCurrentPromo] = React.useState(
+    breakfastPlatters[0].name
+  )
+  React.useEffect(() => {
+    let intervalId = setTimeout(() => {
+      const indx = breakfastPlatters.findIndex((p) => p.name === currentPromo)
+      const nextIndx = indx === breakfastPlatters.length - 1 ? 0 : indx + 1
+      setCurrentPromo(breakfastPlatters[nextIndx].name)
+    }, 5555)
+    return () => clearInterval(intervalId)
+  }, [currentPromo])
+  return (
+    <div>
+      {breakfastPlatters.map((image, i) => {
+        return (
+          <div
+            key={i}
+            className={`promo1${currentPromo === image.name ? " active" : ""}`}
             style={{
-              width: "100%",
-              height: 300,
-              opacity: "inherit",
-              borderRadius: 10,
+              width: columnWidth - 20,
             }}
-          />
-        </div>
-      )
-    })}
-  </div>
-)
+          >
+            <div className="promo1-text">{image.name}</div>
+            <img
+              src={`../../assets/images/breakfastplatters/${image.img}`}
+              style={{
+                width: "100%",
+                height: 300,
+                opacity: "inherit",
+                borderRadius: 10,
+              }}
+            />
+          </div>
+        )
+      })}
+    </div>
+  )
+}
 
 export default Promo1

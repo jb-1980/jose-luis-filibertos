@@ -26,31 +26,42 @@ const promos = [
   },
 ]
 
-const Promo3 = () => (
-  <div className="promo3-container" style={{ height: 400 }}>
-    {promos.map((promo, i) => (
-      <div
-        className="promo3"
-        key={i}
-        style={{
-          height: 400,
-          borderRadius: 10,
-          overflow: "hidden",
-        }}
-      >
-        <img
-          className="promo3-image"
-          src={`../../assets/images/2017/tostadas/${promo.img}`}
+const Promo3 = () => {
+  const [currentPromo, setCurrentPromo] = React.useState(promos[0].name)
+  React.useEffect(() => {
+    let intervalId = setTimeout(() => {
+      const indx = promos.findIndex((p) => p.name === currentPromo)
+      const nextIndx = indx === promos.length - 1 ? 0 : indx + 1
+      setCurrentPromo(promos[nextIndx].name)
+    }, 4567)
+    return () => clearInterval(intervalId)
+  }, [currentPromo])
+  return (
+    <div className="promo3-container" style={{ height: 400 }}>
+      {promos.map((promo, i) => (
+        <div
+          className={`promo3${currentPromo === promo.name ? " active" : ""}`}
+          key={i}
           style={{
-            borderRadius: 10,
             height: 400,
-            width: columnWidth - 20,
+            borderRadius: 10,
+            overflow: "hidden",
           }}
-        />
-        <div className="promo3-title">{promo.name}</div>
-      </div>
-    ))}
-  </div>
-)
+        >
+          <img
+            className="promo3-image"
+            src={`../../assets/images/2017/tostadas/${promo.img}`}
+            style={{
+              borderRadius: 10,
+              height: 400,
+              width: columnWidth - 20,
+            }}
+          />
+          <div className="promo3-title">{promo.name}</div>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default Promo3

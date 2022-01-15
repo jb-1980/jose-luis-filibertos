@@ -25,23 +25,39 @@ const promos = [
 const windowWidth = 1920
 const windowHeight = 1080
 
-const MainPromo = () => (
-  <div className={css(styles.promosContainer)}>
-    {promos.map((promo, i) => (
-      <div key={i} className="main-promo">
-        <div className="main-promo-title">{promo.name}</div>
-        <img
-          className="main-promo-image"
-          src={`../../assets/images/${promo.img}`}
-          style={{
-            width: windowWidth / 2 - 20,
-            height: windowHeight / 2 - 20,
-          }}
-        />
-      </div>
-    ))}
-  </div>
-)
+const MainPromo = () => {
+  const [currentPromo, setCurrentPromo] = React.useState(promos[0].name)
+  React.useEffect(() => {
+    let intervalId = setTimeout(() => {
+      const indx = promos.findIndex((p) => p.name === currentPromo)
+      const nextIndx = indx === promos.length - 1 ? 0 : indx + 1
+      setCurrentPromo(promos[nextIndx].name)
+    }, 5555)
+    return () => clearInterval(intervalId)
+  }, [currentPromo])
+  return (
+    <div className={css(styles.promosContainer)}>
+      {promos.map((promo, i) => (
+        <div
+          key={i}
+          className={`main-promo${
+            currentPromo === promo.name ? " active" : ""
+          }`}
+        >
+          <div className="main-promo-title">{promo.name}</div>
+          <img
+            className="main-promo-image"
+            src={`../../assets/images/${promo.img}`}
+            style={{
+              width: windowWidth / 2 - 20,
+              height: windowHeight / 2 - 20,
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
 
 const styles = StyleSheet.create({
   promosContainer: {

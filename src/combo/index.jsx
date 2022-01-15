@@ -1,16 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { StyleSheet, css } from "aphrodite"
-import { combos } from "./combos"
 
 const windowWidth = 1920
 const windowHeight = 1080
 
-const containerWidth = windowWidth / 6
-const containerHeight = windowHeight / 4
-const headerHeight = containerHeight * (2 / 9) // 60px on a 1080p resolution
-const imgHeight = containerHeight - headerHeight
-const border = 3
+// Header would be 60px for a 1080p resolution, so we will scale
+// accordingly for 4 rows of 6 columns.
+const headerHeight = 60
+const padding = windowWidth / 640
+
+const containerWidth = windowWidth / 6 - 2 * padding
+const imgHeight = windowHeight / 4 - 2 * padding - headerHeight
 
 const styles = StyleSheet.create({
   combos: {
@@ -18,12 +19,13 @@ const styles = StyleSheet.create({
     flexFlow: "row wrap",
     justifyContent: "flex-start",
     width: windowWidth,
+    padding: padding,
   },
   combo: {
     flex: 1,
     maxWidth: containerWidth,
-    height: containerHeight,
-    border: `${border}px solid #000`,
+    height: imgHeight + headerHeight,
+    border: `${padding}px solid #000`,
   },
   comboHeader: {
     display: "flex",
@@ -50,7 +52,6 @@ const styles = StyleSheet.create({
     zIndex: 5,
     color: "#e10707",
     transform: `translateY(7%)`,
-    marginLeft: 5,
   },
   title: {
     flex: 1,
@@ -80,70 +81,74 @@ const styles = StyleSheet.create({
   },
 })
 
-export default class Combos extends React.Component {
-  render() {
-    const combosComponents = combos.map((combo, i) => (
-      <div className={css(styles.combo)} key={i} id={combo._id}>
-        <div className={css(styles.comboHeader)}>
-          <div className={combo.number ? css(styles.number) : ""}>
-            <div className={css(styles.fontTopPadding)}>{combo.number}</div>
-          </div>
-          <div
-            className={`${css(styles.title)} title`}
-            style={{ fontSize: 80 }}
-          >
-            <div className={css(styles.fontTopPadding)}>{combo.title}</div>
-          </div>
-          <div className={css(styles.price)}>
-            <div className={css(styles.fontTopPadding)}>{combo.price}</div>
-          </div>
+export default function Combos() {
+  const [combos, setCombos] = React.useState([])
+  React.useEffect(() => {
+    fetch("../../assets/data/combo-items.json", { cache: "no-store" })
+      .then((res) => res.json())
+      .then(setCombos)
+  }, [])
+  const combosComponents = combos.map((combo, i) => (
+    <div className={css(styles.combo)} key={i} id={combo._id}>
+      <div className={css(styles.comboHeader)}>
+        <div className={combo.number ? css(styles.number) : ""}>
+          <div className={css(styles.fontTopPadding)}>{combo.number}</div>
         </div>
-        <img
-          className={css(styles.img)}
-          src={`../../assets/images/${combo.img}`}
-          alt={combo.title}
-        />
+        <div
+          className={`${css(styles.title)} title`}
+          style={{ fontSize: combo.fontSize }}
+        >
+          <div className={css(styles.fontTopPadding)}>{combo.title}</div>
+        </div>
+        <div className={css(styles.price)}>
+          <div className={css(styles.fontTopPadding)}>{combo.price}</div>
+        </div>
       </div>
-    ))
-
-    const promos = ["Bowls.jpg", "Burritos.jpg"].map((promo, i) => (
       <img
-        key={i}
-        className="promo-image"
+        className={css(styles.img)}
+        src={`../../assets/images/${combo.img}`}
+        alt={combo.title}
+      />
+    </div>
+  ))
+
+  const promos = ["Bowls.jpg", "Burritos.jpg"].map((promo, i) => (
+    <img
+      key={i}
+      className="promo-image"
+      style={{
+        width: 3 * containerWidth,
+        height: imgHeight + headerHeight,
+      }}
+      src={`../../assets/images/promos/${promo}`}
+    />
+  ))
+
+  return (
+    <div className={css(styles.combos)} id="combos">
+      {combosComponents}
+      <div
         style={{
           width: 3 * containerWidth,
           height: imgHeight + headerHeight,
+          border: `${padding}px solid #000`,
+          overflow: "hidden",
         }}
-        src={`../../assets/images/promos/${promo}`}
-      />
-    ))
-
-    return (
-      <div className={css(styles.combos)} id="combos">
-        {combosComponents}
-        <div
-          style={{
-            width: 3 * containerWidth,
-            height: imgHeight + headerHeight,
-            border: `${border}px solid #000`,
-            overflow: "hidden",
-          }}
-        >
-          {promos}
-        </div>
-        <div className={css(styles.combo)}>
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
-            src="../../assets/images/filibertos-logo.png"
-            alt="logo"
-          />
-        </div>
+      >
+        {promos}
       </div>
-    )
-  }
+      <div className={css(styles.combo)}>
+        <img
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+          src="../../assets/images/filibertos-logo.png"
+          alt="logo"
+        />
+      </div>
+    </div>
+  )
 }
 
 ReactDOM.render(<Combos />, document.getElementById("app"))

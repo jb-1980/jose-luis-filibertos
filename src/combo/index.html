@@ -52,41 +52,6 @@
     <div id="app"></app>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
     <script>
-      var autoSizeText = function() {
-        // retrieve all title elements
-        var elements = document.getElementsByClassName("title");
-        if (elements.length === 0){ return; }
-        var results = [];
-        for( var i=0; i < elements.length; i++) {
-          var el = elements[i];
-          results.push( function(el) {
-
-            var resizeText = function() {
-              var style = el.style.fontSize
-              var fontSize = parseFloat(style.slice(0,-2));
-              el.style.fontSize = (fontSize - 1) + 'px';
-              el.fontFamily = 'Special Elite';
-              return el;
-            };
-
-            var results_tmp = [];
-            var counter = 0;
-
-            while (el.scrollHeight > el.offsetHeight && counter < 80) {
-              results_tmp.push(resizeText());
-              counter++;
-            }
-
-            return results_tmp;
-          }(el) );
-        }
-        return results;
-      }();
-      setTimeout(autoSizeText, 3000)
-
-
-    </script>
-    <script>
       function transitionPromo() {
         var nodes = Array.from(document.querySelectorAll('.promo-image'))
         if (nodes.length === 0) return
