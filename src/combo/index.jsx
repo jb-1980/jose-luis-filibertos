@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: 0.5 * headerHeight,
+    fontSize: 0.4 * headerHeight,
     transform: `translateY(${headerHeight / 30}px)`,
   },
   fontTopPadding: {
@@ -96,7 +96,7 @@ export default function Combos() {
         </div>
         <div
           className={`${css(styles.title)} title`}
-          style={{ fontSize: (combo.fontSize * windowHeight) / 1080 }}
+          style={{ fontSize: (combo.fontSize * windowHeight) / 1500 }}
         >
           <div className={css(styles.fontTopPadding)}>{combo.title}</div>
         </div>
