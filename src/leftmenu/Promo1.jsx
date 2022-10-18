@@ -38,7 +38,6 @@ const Promo1 = () => {
         <div
           key={i}
           className={`promo1${currentPromo === promo.name ? " active" : ""}`}
-          height: ;
         >
           <img
             className="promo1-image"
