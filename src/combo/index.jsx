@@ -7,7 +7,7 @@ const windowHeight = 720
 
 // Header would be 60px for a 1080p resolution, so we will scale
 // accordingly for 4 rows of 6 columns.
-const headerHeight = 60
+const headerHeight = (60 * windowHeight) / 1080
 const padding = windowWidth / 640
 
 const containerWidth = windowWidth / 6 - 2 * padding
@@ -96,7 +96,7 @@ export default function Combos() {
         </div>
         <div
           className={`${css(styles.title)} title`}
-          style={{ fontSize: combo.fontSize }}
+          style={{ fontSize: (combo.fontSize * windowHeight) / 1080 }}
         >
           <div className={css(styles.fontTopPadding)}>{combo.title}</div>
         </div>
