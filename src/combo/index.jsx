@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: 0.4 * headerHeight,
+    fontSize: 0.35 * headerHeight,
     transform: `translateY(${headerHeight / 30}px)`,
   },
   fontTopPadding: {
