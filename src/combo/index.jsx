@@ -2,8 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { StyleSheet, css } from "aphrodite"
 
-const windowWidth = 1920
-const windowHeight = 1080
+const windowWidth = 1280
+const windowHeight = 720
 
 // Header would be 60px for a 1080p resolution, so we will scale
 // accordingly for 4 rows of 6 columns.
