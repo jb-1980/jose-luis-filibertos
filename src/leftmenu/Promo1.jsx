@@ -38,13 +38,14 @@ const Promo1 = () => {
         <div
           key={i}
           className={`promo1${currentPromo === promo.name ? " active" : ""}`}
+          height: ;
         >
           <img
             className="promo1-image"
             src={`../../assets/images/2017/quesadillas_supreme/${promo.img}`}
             style={{
               width: windowWidth / 4 - 20,
-              height: (20 * (windowWidth / 4 - 20)) / 23,
+              height: (20 * (windowWidth / 4 - 20)) / 23 - 20,
             }}
           />
           <div
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   promosContainer: {
     flex: 1,
     margin: 10,
-    height: 450,
+    height: 430,
   },
 })
 
