@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   column: {
     flex: 1,
-    padding: 10,
+    padding: 6,
     position: "relative",
     height: 1080,
   },
