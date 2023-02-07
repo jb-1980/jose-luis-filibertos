@@ -1,9 +1,9 @@
-import { combos } from "./combo/combos-2021.js"
-import { menuitems as leftItems } from "./leftmenu/menuitems-2021.js"
-import { menuitems as rightItems } from "./rightmenu/menuitems-2021.js"
+import combos from "../assets/data/combo-items-2022.json" assert { type: "json" }
+import leftItems from "../assets/data/left-menu-items-2022.json" assert { type: "json" }
+import rightItems from "../assets/data/right-menu-items-2022.json" assert { type: "json" }
 import fs from "fs"
 
-const PRICE_INCREASE = 1.05
+const PRICE_INCREASE = 1.1
 
 const _combos = combos.map((combo) => {
   const price = Number(combo.price.replace("$", "")) * PRICE_INCREASE
@@ -41,12 +41,10 @@ const right_menuitems = Object.entries(rightItems).reduce(
   {}
 )
 
-const combosString = "export const combos = " + JSON.stringify(_combos, null, 2)
-const lString =
-  "export const menuitems = " + JSON.stringify(left_menuitems, null, 2)
-const rString =
-  "export const menuitems = " + JSON.stringify(right_menuitems, null, 2)
+const combosString = JSON.stringify(_combos, null, 2)
+const lString = JSON.stringify(left_menuitems, null, 2)
+const rString = JSON.stringify(right_menuitems, null, 2)
 
-fs.writeFileSync("./src/combo/combos.js", combosString)
-fs.writeFileSync("./src/rightmenu/menuitems.js", rString)
-fs.writeFileSync("./src/leftmenu/menuitems.js", lString)
+fs.writeFileSync("./assets/data/combo-items.json", combosString)
+fs.writeFileSync("./assets/data/right-menu-items.json", rString)
+fs.writeFileSync("./assets/data/left-menu-items.json", lString)
