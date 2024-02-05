@@ -39,12 +39,12 @@
     "items": [
       {
         "name": "Taco Salad",
-        "price": "$12.35",
+        "price": "$10.74",
         "description": ""
       },
       {
         "name": "Fili's Chicken Salad",
-        "price": "$11.27",
+        "price": "$9.80",
         "description": ""
       }
     ]
@@ -54,72 +54,72 @@
     "items": [
       {
         "name": "Chicken",
-        "price": "$4.31",
+        "price": "$3.75",
         "description": ""
       },
       {
         "name": "Beef",
-        "price": "$4.88",
+        "price": "$4.24",
         "description": ""
       },
       {
         "name": "Pollo Asado",
-        "price": "$5.09",
+        "price": "$4.43",
         "description": ""
       },
       {
         "name": "Cabeza",
-        "price": "$5.93",
+        "price": "$5.16",
         "description": ""
       },
       {
         "name": "Carne Asada",
-        "price": "$7.29",
+        "price": "$6.34",
         "description": ""
       },
       {
         "name": "Carnitas",
-        "price": "$5.09",
+        "price": "$4.43",
         "description": ""
       },
       {
         "name": "Pescado",
-        "price": "$5.09",
+        "price": "$4.43",
         "description": ""
       },
       {
         "name": "Camaron",
-        "price": "$5.89",
+        "price": "$4.65",
         "description": ""
       },
       {
         "name": "Adobada",
-        "price": "$5.09",
+        "price": "$4.43",
         "description": ""
       },
       {
         "name": "3 Rolled Tacos Cheese",
-        "price": "$5.72",
+        "price": "$4.97",
         "description": ""
       },
       {
         "name": "3 Rolled Tacos Cheese w/ Guacamole",
-        "price": "$6.80",
+        "price": "$5.91",
         "description": ""
       },
       {
         "name": "5 Rolled Tacos Cheese w/ Guacamole",
-        "price": "$8.75",
+        "price": "$7.61",
         "description": ""
       },
       {
         "name": "5 Rolled Tacos w/ Carne Asada",
-        "price": "$13.77",
+        "price": "$11.97",
         "description": ""
       },
       {
         "name": "5 Mini Tacos",
-        "price": "$14.94",
+        "price": "$12.99",
         "description": ""
       }
     ]
@@ -129,52 +129,52 @@
     "items": [
       {
         "name": "Cheese Quesadilla",
-        "price": "$7.79",
+        "price": "$6.77",
         "description": ""
       },
       {
         "name": "Pint of Rice",
-        "price": "$5.18",
+        "price": "$4.50",
         "description": ""
       },
       {
         "name": "Pint of Beans",
-        "price": "$5.18",
+        "price": "$4.50",
         "description": ""
       },
       {
         "name": "Pint of Guacamole",
-        "price": "$14.74",
+        "price": "$12.82",
         "description": ""
       },
       {
         "name": "Chips & Salsa",
-        "price": "$5.82",
+        "price": "$5.06",
         "description": ""
       },
       {
         "name": "Churros",
-        "price": "$2.61",
+        "price": "$2.27",
         "description": ""
       },
       {
         "name": "Carne Asada Fries",
-        "price": "$15.47",
+        "price": "$13.45",
         "description": ""
       },
       {
         "name": "Cowboy Fries",
-        "price": "$14.93",
+        "price": "$13.07",
         "description": ""
       },
       {
         "name": "Super Nachos",
-        "price": "$17.53",
+        "price": "$15.24",
         "description": "Steak, beans, cheese, sour cream, guacamole & pico de gallo"
       },
       {
         "name": "Menudo",
-        "price": "$14.78",
+        "price": "$12.85",
         "description": ""
       }
     ]
@@ -185,17 +185,17 @@
     "items": [
       {
         "name": "Churros",
-        "price": "$2.59",
+        "price": "$2.25",
         "description": ""
       },
       {
         "name": "Cinammon Chips",
-        "price": "$2.59",
+        "price": "$2.25",
         "description": ""
       },
       {
         "name": "Oreo Churro",
-        "price": "$4.19",
+        "price": "$3.64",
         "description": ""
       }
     ]
@@ -205,27 +205,27 @@
     "items": [
       {
         "name": "Carne Asada",
-        "price": "$16.86",
+        "price": "$14.66",
         "description": ""
       },
       {
         "name": "Carnitas",
-        "price": "$15.40",
+        "price": "$13.39",
         "description": ""
       },
       {
         "name": "Pollo",
-        "price": "$14.69",
+        "price": "$12.77",
         "description": ""
       },
       {
         "name": "Camaron",
-        "price": "$16.46",
+        "price": "$14.31",
         "description": ""
       },
       {
         "name": "Mar y tierra",
-        "price": "$18.17",
+        "price": "$15.80",
         "description": ""
       }
     ]
@@ -236,22 +236,22 @@
     "items": [
       {
         "name": "Medium",
-        "price": "$3.90",
+        "price": "$3.39",
         "description": ""
       },
       {
         "name": "Large",
-        "price": "$4.31",
+        "price": "$3.94",
         "description": ""
       },
       {
         "name": "Medium Refill ",
-        "price": "$2.51",
+        "price": "$2.18",
         "description": ""
       },
       {
         "name": "Large Refill",
-        "price": "$2.92",
+        "price": "$2.54",
         "description": ""
       }
     ]
@@ -262,12 +262,12 @@
     "items": [
       {
         "name": "Medium",
-        "price": "$3.15",
+        "price": "$2.74",
         "description": ""
       },
       {
         "name": "Large",
-        "price": "$3.40",
+        "price": "$2.96",
         "description": ""
       }
     ]

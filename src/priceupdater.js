@@ -1,9 +1,9 @@
-import combos from "../assets/data/combo-items-2022.json" assert { type: "json" }
-import leftItems from "../assets/data/left-menu-items-2022.json" assert { type: "json" }
-import rightItems from "../assets/data/right-menu-items-2022.json" assert { type: "json" }
+import combos from "../assets/data/combo-items-2023.json" assert { type: "json" }
+import leftItems from "../assets/data/left-menu-items-2023.json" assert { type: "json" }
+import rightItems from "../assets/data/right-menu-items-2023.json" assert { type: "json" }
 import fs from "fs"
 
-const PRICE_INCREASE = 1.1
+const PRICE_INCREASE = 1.15
 
 const _combos = combos.map((combo) => {
   const price = Number(combo.price.replace("$", "")) * PRICE_INCREASE

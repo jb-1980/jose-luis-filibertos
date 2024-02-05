@@ -5,27 +5,27 @@
     "items": [
       {
         "name": "*Spanish Omelet",
-        "price": "$13.41",
+        "price": "$11.66",
         "description": "Ham, egg, cheese & pico de gallo"
       },
       {
         "name": "*Machaca",
-        "price": "$16.28",
+        "price": "$14.16",
         "description": "Shredded beef, egg, bell peppers, onion & tomatoes"
       },
       {
         "name": "*Steak Ranchero",
-        "price": "$16.70",
+        "price": "$14.52",
         "description": "Steak, egg, & pico de gallo"
       },
       {
         "name": "*Chorizo Plate",
-        "price": "$14.69",
+        "price": "$12.77",
         "description": "Chorizo & egg"
       },
       {
         "name": "*Huevos Rancheros",
-        "price": "$11.81",
+        "price": "$10.27",
         "description": "Two eggs over easy with pico de gallo"
       }
     ]
@@ -36,37 +36,37 @@
     "items": [
       {
         "name": "*Breakfast Burrito",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Ham, eggs, cheese & pico de gallo"
       },
       {
         "name": "*Steak & Egg Burrito",
-        "price": "$13.39",
+        "price": "$11.64",
         "description": "Steak, eggs & cheese"
       },
       {
         "name": "*Chorizo",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Chorizo & eggs"
       },
       {
         "name": "*Bacon Burrito",
-        "price": "$10.48",
+        "price": "$9.11",
         "description": "Bacon, eggs & cheese"
       },
       {
         "name": "*Country Burrito",
-        "price": "$10.02",
+        "price": "$8.71",
         "description": "Potatoes, eggs & cheese"
       },
       {
         "name": "*Sausage Burrito",
-        "price": "$10.48",
+        "price": "$9.11",
         "description": "Sausage, eggs & cheese"
       },
       {
         "name": "*Machaca Burrito",
-        "price": "$11.59",
+        "price": "$10.08",
         "description": "Shredded beef, bell peppers & onions"
       }
     ]
@@ -77,107 +77,107 @@
     "items": [
       {
         "name": "Carne Asada",
-        "price": "$12.25",
+        "price": "$10.65",
         "description": "Diced steak, guacamole, pico de gallo"
       },
       {
         "name": "Carnitas",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Diced pork, guacamole, pico de gallo"
       },
       {
         "name": "Beef",
-        "price": "$10.20",
+        "price": "$8.87",
         "description": "Shredded beef, bell peppers, onions, tomatoes"
       },
       {
         "name": "Beans",
-        "price": "$6.24",
+        "price": "$5.43",
         "description": ""
       },
       {
         "name": "Adobada",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Marinated pork, guacamole, pico de gallo, cabbage"
       },
       {
         "name": "Arizona",
-        "price": "$12.25",
+        "price": "$10.65",
         "description": "Diced steak, potatoes, cheese, pico de gallo"
       },
       {
         "name": "Green Chile",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Diced pork, green chile sauce"
       },
       {
         "name": "Chicken",
-        "price": "$9.13",
+        "price": "$7.94",
         "description": ""
       },
       {
         "name": "*Fish",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Fish, pico de gallo, cabbage, tartar sauce"
       },
       {
         "name": "Chile Relleno",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Two chile rellenos, guacamole, pico de gallo"
       },
       {
         "name": "Pollo Asado",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": "Grilled chicken, guacamole, pico de gallo"
       },
       {
         "name": "*Camaron (Shrimp)",
-        "price": "$12.98",
+        "price": "$11.29",
         "description": ""
       },
       {
         "name": "Patron",
-        "price": "$14.67",
+        "price": "$12.76",
         "description": ""
       },
       {
         "name": "Texas",
-        "price": "$10.29",
+        "price": "$8.95",
         "description": ""
       },
       {
         "name": "Extreme Fajita",
-        "price": "$14.43",
+        "price": "$12.55",
         "description": ""
       },
       {
         "name": "Veggie",
-        "price": "$9.48",
+        "price": "$8.24",
         "description": ""
       },
       {
         "name": "California",
-        "price": "$14.67",
+        "price": "$12.76",
         "description": ""
       },
       {
         "name": "El Gordo",
-        "price": "$16.07",
+        "price": "$13.97",
         "description": ""
       },
       {
         "name": "Cabeza",
-        "price": "$11.39",
+        "price": "$9.90",
         "description": ""
       },
       {
         "name": "Lengua",
-        "price": "$12.60",
+        "price": "$10.96",
         "description": ""
       },
       {
         "name": "Chimichanga",
-        "price": "$14.01",
+        "price": "$12.18",
         "description": "Sour cream, guacamole, cheese, lettuce & pico de gallo"
       }
     ]
@@ -188,42 +188,42 @@
     "items": [
       {
         "name": "Chorizo",
-        "price": "$8.60",
+        "price": "$7.48",
         "description": "Chorizo, eggs, guacamole, lettuce & mayo"
       },
       {
         "name": "Ham",
-        "price": "$10.74",
+        "price": "$9.34",
         "description": ""
       },
       {
         "name": "Machaca",
-        "price": "$9.84",
+        "price": "$8.56",
         "description": "Shredded beef, eggs, bell peppers, onions, tomatoes, guacamole, lettuce & mayo"
       },
       {
         "name": "Carne Asada",
-        "price": "$12.47",
+        "price": "$10.84",
         "description": "Diced steak, guacamole, lettuce & mayo"
       },
       {
         "name": "*Fish",
-        "price": "$8.64",
+        "price": "$7.51",
         "description": "Fish, tartar sauce, cabbage & mayo"
       },
       {
         "name": "Adobada",
-        "price": "$10.55",
+        "price": "$9.17",
         "description": "Marinated pork, guacamole, cabbage & mayo"
       },
       {
         "name": "Chicken",
-        "price": "$8.60",
+        "price": "$7.48",
         "description": "Pollo, guacamole, lettuce & mayo"
       },
       {
         "name": "Carnitas",
-        "price": "$10.55",
+        "price": "$9.17",
         "description": ""
       }
     ]
@@ -234,22 +234,22 @@
     "items": [
       {
         "name": "Cheese",
-        "price": "$9.48",
+        "price": "$8.24",
         "description": "Cheese, lettuce & enchilada sauce"
       },
       {
         "name": "Chicken",
-        "price": "$9.48",
+        "price": "$8.24",
         "description": "Chicken, cheese, lettuce & enchilada sauce"
       },
       {
         "name": "Beef",
-        "price": "$10.55",
+        "price": "$9.17",
         "description": "Shredded beef, bell peppers, onions, tomatoes, cheese, lettuce & enchilada sauce"
       },
       {
         "name": "Two Chile Rellenos",
-        "price": "$10.93",
+        "price": "$9.50",
         "description": "Two chile rellenos, guacamole, sour cream, lettuce & pico de gallo"
       }
     ]
@@ -260,27 +260,27 @@
     "items": [
       {
         "name": "Chicken",
-        "price": "$7.87",
+        "price": "$6.84",
         "description": ""
       },
       {
         "name": "Carne Asada",
-        "price": "$10.03",
+        "price": "$8.72",
         "description": ""
       },
       {
         "name": "Carnitas",
-        "price": "$7.87",
+        "price": "$6.84",
         "description": ""
       },
       {
         "name": "Bean",
-        "price": "$5.09",
+        "price": "$4.43",
         "description": ""
       },
       {
         "name": "Chips & Guacamole",
-        "price": "$9.84",
+        "price": "$8.56",
         "description": ""
       }
     ]
@@ -291,27 +291,27 @@
     "items": [
       {
         "name": "Carnitas",
-        "price": "$12.52",
+        "price": "$10.89",
         "description": ""
       },
       {
         "name": "Chicken",
-        "price": "$12.52",
+        "price": "$10.89",
         "description": ""
       },
       {
         "name": "Carne Asada",
-        "price": "$14.59",
+        "price": "$12.69",
         "description": ""
       },
       {
         "name": "Adobada",
-        "price": "$13.52",
+        "price": "$11.76",
         "description": ""
       },
       {
         "name": "Shrimp",
-        "price": "$15.77",
+        "price": "$13.71",
         "description": ""
       }
     ]
@@ -322,17 +322,17 @@
     "items": [
       {
         "name": "Chicken Nuggets",
-        "price": "$7.45",
+        "price": "$6.48",
         "description": ""
       },
       {
         "name": "Jr. Quesadilla",
-        "price": "$7.45",
+        "price": "$6.48",
         "description": ""
       },
       {
         "name": "Jr. Bean & Cheese Burrito",
-        "price": "$7.45",
+        "price": "$6.48",
         "description": ""
       }
     ]
