@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     flex: 1,
     color: "rgb(222, 245, 84)",
+    fontSize: "0.7rem",
   },
 })
 

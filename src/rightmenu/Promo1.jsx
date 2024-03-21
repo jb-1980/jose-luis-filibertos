@@ -23,7 +23,7 @@ const breakfastPlatters = [
   },
 ]
 
-const windowWidth = 1920
+const windowWidth = 1024
 const columnWidth = (windowWidth - 4) / 4
 
 const Promo1 = () => {
@@ -54,7 +54,7 @@ const Promo1 = () => {
               src={`../../assets/images/breakfastplatters/${image.img}`}
               style={{
                 width: "100%",
-                height: 300,
+                height: 200,
                 opacity: "inherit",
                 borderRadius: 10,
               }}

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     color: "rgb(240, 103, 16)",
     textAlign: "center",
-    fontSize: 39,
+    fontSize: "1.2rem",
     marginBottom: 0,
     marginTop: 0,
   },
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     marginTop: 0,
     marginBottom: 0,
     textAlign: "center",
-    fontSize: "1em",
+    fontSize: "1rem",
   },
 })
 

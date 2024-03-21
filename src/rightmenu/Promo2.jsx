@@ -1,6 +1,6 @@
 import React from "react"
 
-const windowWidth = 1920
+const windowWidth = 1024
 const columnWidth = (windowWidth - 4) / 4
 
 const promos = [
@@ -39,7 +39,7 @@ const Promo2 = () => {
           className={`promo2${currentPromo === promo.name ? " active" : ""}`}
           key={i}
           style={{
-            height: 330,
+            height: 210,
             borderRadius: 10,
           }}
         >
@@ -48,7 +48,7 @@ const Promo2 = () => {
             src={`../../assets/images/2017/enchiladas/${promo.img}`}
             style={{
               borderRadius: 10,
-              height: 330,
+              height: 210,
               width: columnWidth - 20,
             }}
           />

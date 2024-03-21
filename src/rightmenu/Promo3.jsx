@@ -1,6 +1,6 @@
 import React from "react"
 
-const windowWidth = 1920
+const windowWidth = 1024
 const columnWidth = (windowWidth - 4) / 4
 
 const promos = [
@@ -37,13 +37,13 @@ const Promo3 = () => {
     return () => clearInterval(intervalId)
   }, [currentPromo])
   return (
-    <div className="promo3-container" style={{ height: 400 }}>
+    <div className="promo3-container" style={{ height: 200 }}>
       {promos.map((promo, i) => (
         <div
           className={`promo3${currentPromo === promo.name ? " active" : ""}`}
           key={i}
           style={{
-            height: 400,
+            height: 200,
             borderRadius: 10,
             overflow: "hidden",
           }}
@@ -53,7 +53,7 @@ const Promo3 = () => {
             src={`../../assets/images/2017/tostadas/${promo.img}`}
             style={{
               borderRadius: 10,
-              height: 400,
+              height: 200,
               width: columnWidth - 20,
             }}
           />
