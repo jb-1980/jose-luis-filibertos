@@ -10,7 +10,7 @@ import Promo3 from "./Promo3"
 
 const styles = StyleSheet.create({
   columns: {
-    width: 1920,
+    width: 1024,
     display: "flex",
     justifyContent: "flex-start",
   },
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 6,
     position: "relative",
-    height: 1080,
+    height: 768,
   },
   disclaimer: {
     alignSelf: "flex-end",

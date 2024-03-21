@@ -22,8 +22,8 @@ const promos = [
   },
 ]
 
-const windowWidth = 1920
-const windowHeight = 1080
+const windowWidth = 1024
+const windowHeight = 768
 
 const MainPromo = () => {
   const [currentPromo, setCurrentPromo] = React.useState(promos[0].name)

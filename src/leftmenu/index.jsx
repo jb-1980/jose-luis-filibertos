@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     display: "flex",
   },
   leftHalf: {
-    width: 960,
-    height: 1080,
+    width: 512,
+    height: 768,
     display: "flex",
     ":first-child": {
       marginLeft: 0,
@@ -22,13 +22,13 @@ const styles = StyleSheet.create({
     },
   },
   rightHalf: {
-    width: 960,
-    height: 1080,
+    width: 512,
+    height: 768,
     display: "flex",
     flexDirection: "column",
   },
   column: {
-    width: 480,
+    width: 256,
     flex: 1,
     marginLeft: 7,
     marginRight: 7,
@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   logo: {
-    width: 480 - 14,
+    width: 256 - 14,
   },
   catchPhrase: {
     textAlign: "center",
-    fontSize: "3.5em",
+    fontSize: "3.5rem",
     color: "rgb(253, 229, 0)",
   },
 })
