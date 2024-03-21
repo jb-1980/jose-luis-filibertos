@@ -61,8 +61,8 @@ const MainPromo = () => {
 
 const styles = StyleSheet.create({
   promosContainer: {
-    flex: 1,
     margin: 10,
+    height: windowHeight / 2,
   },
 })
 

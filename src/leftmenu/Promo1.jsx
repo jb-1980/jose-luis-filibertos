@@ -20,7 +20,7 @@ const promos = [
   },
 ]
 
-const windowWidth = 1920
+const windowWidth = 1024
 
 const Promo1 = () => {
   const [currentPromo, setCurrentPromo] = React.useState(promos[0].name)
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   promosContainer: {
     flex: 1,
     margin: 10,
-    height: 430,
+    height: 300,
   },
 })
 

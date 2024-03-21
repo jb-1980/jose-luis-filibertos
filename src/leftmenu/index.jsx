@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
   },
   underPromo: {
     display: "flex",
-    flex: 1,
+    height: 768 / 2,
   },
   logo: {
     width: 256 - 14,
   },
   catchPhrase: {
     textAlign: "center",
-    fontSize: "3.5rem",
+    fontSize: "2.0rem",
     color: "rgb(253, 229, 0)",
   },
 })

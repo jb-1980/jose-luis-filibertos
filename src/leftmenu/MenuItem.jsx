@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    fontSize: "1.8em",
+    fontSize: "1rem",
   },
   itemName: {
     flex: 1,
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
   itemDescription: {
     flexBasis: "100%",
-    fontSize: "1.1em",
+    fontSize: "1.1rem",
   },
 })
 
